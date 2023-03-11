@@ -20,4 +20,5 @@
 Console.Write("Напишите несколько слов: ");
 string userString = Console.ReadLine()!;
 string[] testArray = wordLessOrEqualThree(userString);
-Console.WriteLine($"[\"{string.Join("\", \"", testArray)}\"]");
+if (testArray.Length > 0) Console.WriteLine($"[\"{string.Join("\", \"", testArray)}\"]");
+else Console.WriteLine("[]");
